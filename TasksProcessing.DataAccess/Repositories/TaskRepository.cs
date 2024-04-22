@@ -10,7 +10,7 @@ public class TaskRepository : ITaskRepository
     private readonly DbSet<TaskEntity> _dbSet;
 
     public TaskRepository(TaskProcessingContext tasksProcessingContext)
-    {;
+    {
         _dbSet = tasksProcessingContext.Tasks;
     }
 
